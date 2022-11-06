@@ -300,6 +300,9 @@
                       <div class="Rte">
                         {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
                       </div>
+                      <div class="Rte">
+                        {{ block.settings.fit_detail }}
+                      </div>
                     </div>
                   {%- endif -%}
 
@@ -602,7 +605,14 @@ This is the root container for the zoom functionality. Must not be removed, as o
     {
       "type": "description",
       "name": "Description",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "fit_detail",
+          "label": "Fit detail"
+        }
+      ]
     },
     {
       "type": "liquid",

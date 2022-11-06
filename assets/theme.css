@@ -4020,6 +4020,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   vertical-align: top;
   cursor: pointer;
   background-size: cover;
+  border: 1px solid;
 }
 
 .ColorSwatch::after {
