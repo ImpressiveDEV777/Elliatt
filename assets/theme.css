@@ -11351,3 +11351,69 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
+
+.background-video-wrapper {
+  height: auto;
+  padding: 0;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-video video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-video-wrapper--widescreen {
+  padding-bottom: 56.25%;
+}
+
+.background-video-wrapper--four-three {
+  padding-bottom: 75%;
+}
+
+.background-video-wrapper--cinematic {
+  padding-bottom: 42.55319%;
+}
+
+.background-video-wrapper--full-screen {
+  padding-bottom: 100vh;
+}
+
+.section-video {
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .lg\:background-video-wrapper--widescreen {
+    padding-bottom: 56.25%;
+  }
+
+  .lg\:.background-video-wrapper--full-screen {
+    padding-bottom: 100vh;
+  }
+
+  .lg\:background-video-wrapper--cinematic {
+    padding-bottom: 42.55319%;
+  }
+
+  .lg\:background-video-wrapper--four-three {
+    padding-bottom: 75%;
+  }
+}

@@ -6,7 +6,6 @@
 {%- endcomment -%}
 
 {%- assign color_value_downcase = value | downcase -%}
-{%- assign color_swatch_style = 'background-color: ' | append: color_value_downcase -%}
 
 {%- for color_swatch_item in color_swatch_config -%}
   {%- assign color_swatch_parts = color_swatch_item | split: ':' -%}
